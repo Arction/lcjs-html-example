@@ -43,7 +43,7 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 
 © Arction Ltd 2009-2019. All rights reserved.
 
-[0]: ()
+[0]: https://github.com/Arction/lcjs-html-example/issues
 [1]: https://www.arction.com/lightningchart-js-api-documentation
 [2]: https://arction.com
 [3]: https://stackoverflow.com/questions/tagged/lcjs?sort=newest
