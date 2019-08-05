@@ -9,7 +9,7 @@ More information about LightningChart<sup>&#174;</sup> JS can be found from our 
 To view the example:
 
 1. Download the LightningChart JS package.
-    * The package can be downloaded from [](TODO link to Store).
+    * The package can be downloaded from [https://portal.arction.com/](https://portal.arction.com/).
     * Alternatively, the package can be downloaded using `npm`. To use this method install Node.Js and run `npm install` in the folder containing `package.json`.
 2. Extract the package and move the `lcjs.iife.js` file contained inside of it to the `scripts` folder.
     * This step can be skipped if `npm` was used. A `postinstall` script has been setup to do this copy operation.
