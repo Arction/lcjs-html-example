@@ -8,6 +8,6 @@
   "author": "Arction Ltd.",
   "license": "MIT",
   "dependencies": {
-    "@arction/lcjs": "^1.0.0"
+    "@arction/lcjs": "^1.0.3"
   }
 }
