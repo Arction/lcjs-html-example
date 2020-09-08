@@ -34,7 +34,7 @@ If you think you found a bug in the LightningChart JavaScript library, please co
 
 Direct developer email support can be purchased through a [Support Plan][4] or by contacting sales@arction.com.
 
-© Arction Ltd 2009-2019. All rights reserved.
+© Arction Ltd 2009-2020. All rights reserved.
 
 [0]: https://github.com/Arction/lcjs-html-example/issues
 [1]: https://www.arction.com/lightningchart-js-api-documentation
