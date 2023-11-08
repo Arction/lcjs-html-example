@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Using chart in HTML page</title>
     <meta charset="utf-8" />
     <!-- Automatically support high DPI devices -->
@@ -10,29 +9,29 @@
     <!-- Flexbox styling to have the chart and header fill the page.
         Chart will take as much space as possible. -->
     <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-        }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
 
-        .box {
-            display: flex;
-            flex-flow: column;
-            height: 100%;
-        }
+      .box {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+      }
 
-        .box .row.header {
-            flex: 0 1 auto;
-        }
+      .box .row.header {
+        flex: 0 1 auto;
+      }
 
-        .box .row.content {
-            flex: 1 1 auto;
-        }
+      .box .row.content {
+        flex: 1 1 auto;
+      }
     </style>
-</head>
+  </head>
 
-<body class="box">
+  <body class="box">
     <h1 class="row header">LightningChart<sup>&#174;</sup> JS in HTML page</h1>
 
     <!-- Create div to render the chart into-->
@@ -46,35 +45,36 @@
 
     <!--Actual chart related script tag-->
     <script>
-        // Replace the contents of this script tag if you want to test code from our examples:
-        // https://www.arction.com/lightningchart-js-interactive-examples/
+      // Replace the contents of this script tag if you want to test code from our examples:
+      // https://www.arction.com/lightningchart-js-interactive-examples/
 
-        // Extract required parts from LightningChartJS.
-        const {
-            lightningChart
-        } = lcjs //Note: @arction/lcjs is not needed here, when using IIFE assembly
+      // Extract required parts from LightningChartJS.
+      const { lightningChart } = lcjs; //Note: @arction/lcjs is not needed here, when using IIFE assembly
 
-        // Create a XY Chart.
-        const chart = lightningChart().ChartXY({
-            // Set the chart into a div with id, 'target'. 
-            // Chart's size will automatically adjust to div's size. 
-            container: 'target'
+      const lc = lightningChart({
+        // Get your license key from https://lightningchart.com/js-charts/
+        //  license: 'my-license-key'
+      });
+
+      // Create a XY Chart.
+      const chart = lc
+        .ChartXY({
+          // Set the chart into a div with id, 'target'.
+          // Chart's size will automatically adjust to div's size.
+          container: "target",
         })
-            .setTitle('My first chart') // Set chart title
+        .setTitle("My first chart"); // Set chart title
 
-        const data = [
-            { x: 0, y: 1.52 },
-            { x: 1, y: 1.56 },
-            { x: 2, y: 1.42 },
-            { x: 3, y: 1.85 },
-            { x: 4, y: 1.62 }
-        ]
+      const data = [
+        { x: 0, y: 1.52 },
+        { x: 1, y: 1.56 },
+        { x: 2, y: 1.42 },
+        { x: 3, y: 1.85 },
+        { x: 4, y: 1.62 },
+      ];
 
-        // Add a line series.
-        const lineSeries = chart.addLineSeries()
-            .setName('My data')
-            .add(data)
+      // Add a line series.
+      const lineSeries = chart.addLineSeries().setName("My data").add(data);
     </script>
-</body>
-
+  </body>
 </html>
